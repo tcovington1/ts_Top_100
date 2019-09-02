@@ -28,7 +28,7 @@ class BillboardsController < ApplicationController
   end
 
   def update
-    if @sub.update(billboard_params)
+    if @billboard.update(billboard_params)
       redirect_to billboards_path
     else
       render :edit  
