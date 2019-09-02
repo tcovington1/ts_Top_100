@@ -8,6 +8,7 @@
 
 <%#                             can also use @sub.id %>           
 <button type="button" class="btn btn-light"><%= link_to 'View Artist', song_artist_path([@song, @artist]) %></button>
+<button type="button" class="btn btn-light"><%= link_to 'View Song Details', billboard_song_path([@billboard, @song]) %></button>
 <button type="button" class="btn btn-light"><%= link_to 'Edit Billboard', edit_billboard_path(@billboard) %></button>
 <button type="button" class="btn btn-light"><%= link_to "Delete Billboard", @billboard, method: :delete %></button>
 
