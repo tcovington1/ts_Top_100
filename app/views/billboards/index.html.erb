@@ -1,0 +1,10 @@
+<%= 'Welcome to the TS Top 100'%>
+<br>
+<%= link_to 'Add A Song', new_billboard_path %>
+
+
+<ul>
+  <% @billboards.each do |song|%>
+    <li><%= link_to song.name, song %></li>
+  <% end %>
+</ul>
