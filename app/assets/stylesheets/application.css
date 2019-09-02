@@ -17,3 +17,9 @@
  .top-title {
    margin-left: 50px;
  }
+
+ li {
+   text-decoration: none;
+   list-style: none;
+ }
+

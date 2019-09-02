@@ -4,8 +4,10 @@
 <h3 class = 'top-title'><%= @billboard.genre %></h3>
 
 <p>What do you like to do?</p>
-<%#                             can also use @sub.id %>
-<button type="button" class="btn btn-light"><%= link_to 'View Songs', billboard_songs_path(@billboard) %></button>
+
+
+<%#                             can also use @sub.id %>           
+<button type="button" class="btn btn-light"><%= link_to 'View Artist', song_artist_path([@song, @artist]) %></button>
 <button type="button" class="btn btn-light"><%= link_to 'Edit Billboard', edit_billboard_path(@billboard) %></button>
 <button type="button" class="btn btn-light"><%= link_to "Delete Billboard", @billboard, method: :delete %></button>
 
