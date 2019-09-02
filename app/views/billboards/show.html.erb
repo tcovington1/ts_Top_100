@@ -1,2 +1,14 @@
-<h1>Billboards#show</h1>
-<p>Find me in app/views/billboards/show.html.erb</p>
+<h1 class = 'top-title'><%= @billboard.rank %></h1>
+<h1 class = 'top-title'><%= @billboard.title %></h1>
+<h2 class = 'top-title'><%= @billboard.artist %></h2>
+<h3 class = 'top-title'><%= @billboard.genre %></h3>
+
+<p>What do you like to do?</p>
+<%#                             can also use @sub.id %>
+<button type="button" class="btn btn-light"><%= link_to 'View Songs', billboard_songs_path(@billboard) %></button>
+<button type="button" class="btn btn-light"><%= link_to 'Edit Billboard', edit_billboard_path(@billboard) %></button>
+<button type="button" class="btn btn-light"><%= link_to "Delete Billboard", @billboard, method: :delete %></button>
+
+<br>
+
+<button type="button" class="btn btn-light"><%= link_to 'Go Back', billboards_path%></button>
