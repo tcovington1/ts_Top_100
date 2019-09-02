@@ -1,12 +1,12 @@
 <h1><%= @billboard.id ? 'Edit Billboard' : 'Create Billboard' %></h1>
 <%= form_for @billboard do |f| %>
   <%= f.label :rank %>
-  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.text_field :rank, required: true, autofocus: true %>
   <%= f.label :artist %>
-  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.text_field :artist, required: true, autofocus: true %>
   <%= f.label :title %>
-  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.text_field :title, required: true, autofocus: true %>
   <%= f.label :genre %>
-  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.text_field :genre, required: true, autofocus: true %>
   <%= f.submit %>
 <% end %>

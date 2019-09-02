@@ -4,7 +4,7 @@
 
 
 <ul>
-  <% @billboards.each do |song|%>
-    <li><%= link_to song.name, song %></li>
+  <% @billboards.each do |billboard|%>
+    <li><%= link_to billboard.title, billboard %></li>
   <% end %>
 </ul>

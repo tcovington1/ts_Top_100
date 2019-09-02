@@ -10,7 +10,7 @@ class BillboardsController < ApplicationController
   end
 
   def new
-    # @billboard = Billboard.new
+    @billboard = Billboard.new
     render partial: 'form'
   end
 
@@ -24,7 +24,7 @@ class BillboardsController < ApplicationController
   end
 
   def edit
-    
+    render partial: 'form'
   end
 
   def update
@@ -47,7 +47,7 @@ class BillboardsController < ApplicationController
   end
 
   def billboard_params
-    params.require(:billboards).permit(:rank, :artist, :title, :genre)
+    params.require(:billboard).permit(:rank, :artist, :title, :genre)
   end
 
 end

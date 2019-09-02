@@ -1,2 +1,10 @@
-<h1>Billboards#show</h1>
-<p>Find me in app/views/billboards/show.html.erb</p>
+<h1><%= @billboard.rank %></h1>
+<h1><%= @billboard.title %></h1>
+<h2><%= @billboard.artist %></h2>
+<h3><%= @billboard.genre %></h3>
+
+<p>What do you like to do?</p>
+<%#                             can also use @sub.id %>
+<%= link_to 'View Songs', billboard_songs_path(@billboard) %>
+<%= link_to 'Edit Billboard', edit_billboard_path(@billboard) %>
+<%= link_to "Delete Billboard", @billboard, method: :delete %>
