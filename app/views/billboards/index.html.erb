@@ -1,11 +1,33 @@
 <h1 class = 'top-title'><%= 'Welcome to the TS Top 100'%></h1>
 <br>
-<button type="button" class="btn btn-light"><%= link_to 'Add A Song', new_billboard_path %></button>
+<button type="button" class="btn btn-light"><%= link_to 'Add A Song to Billboard', new_billboard_path %></button>
 
 
 
-<ul>
+<table>
+<tr>
+  <th>Rank</th>
+  <th>Title</th>
+  <th>Artist</th>
+  <th>Genre</th>
+  
+  
+</tr>  
   <% @billboards.each do |billboard|%>
-    <li><%= link_to billboard.title, billboard %></li>
+    <tr>
+      <td><%= billboard.rank %></td>
+      <td><%=  billboard.title %></td>
+      <td><%=  billboard.artist %></td>
+      <td><%=  billboard.genre %></td>
+      <td><%= link_to 'Go to Song', billboard %></td>
+    </tr>
+    
   <% end %>
-</ul>
+
+  </table>
+
+  <%   %>
+
+
+
+
